@@ -5,8 +5,8 @@
         "fullscreen"
     ],
     "short_name": "맨오브더매치",
-    "start_url": "/",
-    "scope": "https://www.motm.co.kr/",
+    "start_url": "https://jun184.github.io/motm_test/",
+    "scope": "https://jun184.github.io/motm_test/",
     "description": "꼭 필요한 정보를 여러분 손 안으로 배달해드립니다.",
     "background_color": "#FFFFFF",
     "theme_color": "#FFFFFF",
