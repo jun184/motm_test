@@ -1,0 +1,921 @@
+<!doctype html>
+<html class="no-js" lang="ko" dir="ltr">
+<head>
+<!-- 석준 테스트 -->
+<link rel="manifest" href="/motm.webmanifest" />
+<meta data-react-helmet="true" name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_15_Pro_Max__iPhone_15_Plus__iPhone_14_Pro_Max_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_15_Pro__iPhone_15__iPhone_14_Pro_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_11_Pro_Max__iPhone_XS_Max_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/iPhone_11__iPhone_XR_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="splash_screens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/12.9__iPad_Pro_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/11__iPad_Pro__10.5__iPad_Pro_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.9__iPad_Air_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.5__iPad_Air_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/10.2__iPad_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="splash_screens/8.3__iPad_Mini_landscape.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_15_Pro_Max__iPhone_15_Plus__iPhone_14_Pro_Max_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_15_Pro__iPhone_15__iPhone_14_Pro_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_14_Plus__iPhone_13_Pro_Max__iPhone_12_Pro_Max_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_14__iPhone_13_Pro__iPhone_13__iPhone_12_Pro__iPhone_12_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_13_mini__iPhone_12_mini__iPhone_11_Pro__iPhone_XS__iPhone_X_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_11_Pro_Max__iPhone_XS_Max_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/iPhone_11__iPhone_XR_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="splash_screens/iPhone_8_Plus__iPhone_7_Plus__iPhone_6s_Plus__iPhone_6_Plus_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/iPhone_8__iPhone_7__iPhone_6s__iPhone_6__4.7__iPhone_SE_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/4__iPhone_SE__iPod_touch_5th_generation_and_later_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/12.9__iPad_Pro_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/11__iPad_Pro__10.5__iPad_Pro_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 820px) and (device-height: 1180px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.9__iPad_Air_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.5__iPad_Air_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/10.2__iPad_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/9.7__iPad_Pro__7.9__iPad_mini__9.7__iPad_Air__9.7__iPad_portrait.png">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="splash_screens/8.3__iPad_Mini_portrait.png">
+<script>
+	(function () {
+	  if ("serviceWorker" in navigator) {
+		navigator.serviceWorker.register("/sw.js");
+	  }
+	})();
+  </script>
+<!-- 석준 테스트 -->
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="max-image-preview:large">
+<meta name="theme-color" content="#013f92">
+<!-- 메타태그정보 //-->
+<meta name="description" content="축구 관련 뉴스 및 커뮤니티 공간"/>
+<meta property="og:title" content="맨오브더매치"/>
+<meta property="og:site_name" content="맨오브더매치"/>
+<meta property="og:image" content="http://www.motm.co.kr/image/logo/snslogo_20230920093207.jpg" />
+<meta property="og:url"	content="http://www.motm.co.kr" />
+<meta property="og:description" content="축구 관련 뉴스 및 커뮤니티 공간" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="맨오브더매치"/>
+<meta name="twitter:description" content="축구 관련 뉴스 및 커뮤니티 공간"/>
+<meta name="twitter:image:src" content="http://www.motm.co.kr/image/logo/snslogo_20230920093207.jpg"/>
+<!--// 메타태그정보 -->
+<title>맨오브더매치</title>
+<link rel="alternate" type="application/rss+xml" href="https://www.motm.co.kr/rss/gns_allArticle.xml"/>
+<link rel="canonical"  href="http://www.motm.co.kr" />
+<link rel="apple-touch-icon-precomposed" href="https://cdn.motm.co.kr/image/logo/snslogo_20230920093207.jpg" />
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/jquery-ui.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/slick.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/aos.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/adManager/css/adManager.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/foundation.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/custom.foundation.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/webfonts.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/font.style.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/media.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/autobox.style.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/templates.style.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/plugin.style.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/style.min.css">
+<link rel="stylesheet" href="https://cdn.motm.co.kr/css/design.style.css"><link rel="stylesheet" href="https://cdn.motm.co.kr/menuskin/md_01/menubar.css">
+<script src="https://cdn.motm.co.kr/script/jquery.min.js"></script>
+<script src="https://cdn.motm.co.kr/script/jquery-ui.min.js"></script>
+<script src="https://cdn.motm.co.kr/script/slick.min.js"></script>
+<script src="https://cdn.motm.co.kr/script/jquery.rwdImageMaps.min.js"></script>
+<script src="https://cdn.motm.co.kr/script/what-input.js"></script>
+<script src="https://cdn.motm.co.kr/script/foundation.min.js"></script>
+<script src="https://cdn.motm.co.kr/menuskin/md_01/menubar.js"></script>
+<script src="https://cdn.motm.co.kr/script/user.style.js"></script>
+<script src="https://cdn.motm.co.kr/script/clipboard.min.js"></script>
+<script src="https://cdn.motm.co.kr/script/jquery.tabslet.min.js"></script>
+<script src="https://cdn.motm.co.kr/script/aos.min.js"></script>
+<script src="https://cdn.motm.co.kr/script/aos.nd.js"></script>
+<script src="https://cdn.motm.co.kr/script/common.js"></script>
+
+<script type="text/javascript">
+
+	// 이미지맵
+	$(document).ready(function(e) {
+		$('img[usemap]').rwdImageMaps();
+		
+		bannerpop.banner(".banner_event_box");					// 기능성배너 이벤트 
+		bannerpopMulti.bannerLoad();                            // 멀티 기능성 배너 이벤트
+		
+		// 기사뷰 이미지관련
+			});
+
+	// domain
+	var SITE_DOMAIN = 'http://www.motm.co.kr'
+		,CDN_DOMAIN = 'https://cdn.motm.co.kr'
+		,___currentTime	= 1702261673;
+
+</script>
+<style type="text/css">
+/* 사이트 기본 색 */
+.user-point,a.user-point,
+.poll-columns .poll-state.going
+{color:#013f92 !important}
+.user-bg,.user-bg:hover,.user-bg:active,.user-bg:focus,li[id*="slick-"].slick-active button[data-role],
+.checkbox-group > input[type="radio"]:checked + label::before, .checkbox-group > input[type="checkbox"]:checked + label::before,
+.radio-group > input[type="radio"]:checked + label::before, .radio-group > input[type="checkbox"]:checked + label::before,
+.tabs .tabs-title.is-active a,
+.poll-view .poll-view-state.going,.poll-view .poll-radio input[type="radio"]:checked + label::before,.poll-view .poll-radio input[type="checkbox"]:checked + label::before,
+.nd-switch.user-bg input[type="checkbox"]:checked + label,.nd-switch.user-bg input[type="radio"]:checked + label,
+.nd-switch.user-bg input[type="checkbox"]:checked + label::before,.nd-switch.user-bg input[type="radio"]:checked + label::before,
+.switch-group.user-bg > .nd-switch input[type="checkbox"]:checked + label,.switch-group.user-bg > .nd-switch input[type="radio"]:checked + label
+{background-color:#013f92 !important}
+.user-border,
+.checkbox-group input[type="checkbox"] + label::before, .checkbox-group input[type="radio"] + label::before,
+.radio-group input[type="checkbox"] + label::before, .radio-group input[type="radio"] + label::before,
+.poll-view .poll-radio input[type="radio"] + label:hover strong::before,.poll-view .poll-radio input[type="checkbox"] + label:hover strong::before,
+.poll-view .poll-radio input[type="radio"]:checked + label  strong::before,.poll-view .poll-radio input[type="checkbox"]:checked + label  strong::before,
+#gallery-wrap .gallery-content.view-page .gallery-thumb .nav-content.slick-current::before
+{border-color:#013f92 !important}
+.user-border-top {border-top-color:#013f92 !important}
+.user-border-bottom {border-bottom-color:#013f92 !important}
+.user-border-left {border-left-color:#013f92 !important}
+.user-border-right {border-right-color:#013f92 !important}
+.mobile-tabs .tabs .is-active a {color:#013f92 !important;background:#fff !important}
+.checkbox-group input[type="checkbox"] + label::before, .checkbox-group input[type="radio"] + label::before,
+.radio-group input[type="checkbox"] + label::before, .radio-group input[type="radio"] + label::before {opacity:.3}
+.checkbox-group > input[type="radio"]:checked + label::before, .checkbox-group > input[type="checkbox"]:checked + label::before,
+.radio-group > input[type="radio"]:checked + label::before, .radio-group > input[type="checkbox"]:checked + label::before {opacity:initial}
+
+/* view */
+@media screen and (max-width: 1200px) {
+	#sticky-header .aht-btn {display:none !important}
+}
+
+/* site size */
+.width-728 {width:728px}
+.max-width-728 {max-width:728px}
+</style>
+
+<!-- 네이버 서치어드바이저 소유확인 메타태그 -->
+<meta name="naver-site-verification" content="adec24f098d4c2463dbd8b9d47efd00531d723d3" />
+<!-- 구글 서치콘솔 소유권확인 20231107 -->
+<meta name="google-site-verification" content="_camKciptAKsZ4r3iFBsEGWtEN5IVZ7po7EZYhbNa-c" />
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-581ZBW1YFF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-581ZBW1YFF');
+</script>
+
+
+
+</head>
+<body class="" >
+
+
+<!-- wrap //-->
+<div id="user-wrap" class="mobile " data-effect="fade-up" data-effect-time="300">
+	<div class="row expanded">
+
+		<!-- header //-->
+<header id="user-header">
+	<div class="wrapper">
+	
+		<div class="grid-left">
+			<button type="button" class="nav-btns" aria-label="전체메뉴"><i class="icon-bars"></i></button>
+		</div>
+		
+				<H1 class="grid-center">
+			<a href="http://www.motm.co.kr" target="_top" class="user-logo" style="background-image:url(https://cdn.motm.co.kr/image/logo/mobilelogo_20230920093207.png)">
+				<span class="show-for-sr">맨오브더매치</span>
+			</a>
+		</H1>
+		
+		<article class="grid-right">
+			<div class="user-search">
+				<button type="button" class="sch-btns"><i class="icon-search-thin"><span class="show-for-sr">검색 버튼</span></i></button>			
+				<fieldset class="basic-search">
+					<form name="head-search" method="get" class="clearfix" action="/news/articleList.html">
+						<input type="hidden" name="sc_area" value="A">
+						<input type="hidden" name="view_type" value="sm">
+						<label class="show-for-sr" for="sc_word">검색</label>
+						<button type="button" class="sch-close"><i class="icon-close-thin"><span class="show-for-sr">검색닫기</span></i></button>
+						<input type="search" name="sc_word" id="sc_word" onkeydown="if(event.keyCode==13){if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');return false;}}" placeholder="검색어를 입력하세요">
+						<button type="button" onclick="if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');this.form.sc_word.focus();return false;}"><i class="icon-search-thin"><span class="show-for-sr">검색</span></i></button>
+					</form>
+				</fieldset>
+			</div>
+		</article>
+	</div>
+
+	<nav class="visual-nav scroll">
+		<div class="inset">
+			<a href="/news/articleList.html?sc_sub_section_code=S2N2&view_type=sm" target="_top" class="item">프리미어리그</a>
+<a href="/news/articleList.html?sc_sub_section_code=S2N7&view_type=sm" target="_top" class="item">라리가</a>
+<a href="/news/articleList.html?sc_sub_section_code=S2N12&view_type=sm" target="_top" class="item">세리에A</a>
+<a href="/news/articleList.html?sc_sub_section_code=S2N17&view_type=sm" target="_top" class="item">분데스리가</a>
+<a href="/news/articleList.html?sc_sub_section_code=S2N22&view_type=sm" target="_top" class="item">기타리그</a>
+<a href="/news/articleList.html?sc_sub_section_code=S2N27&view_type=sm" target="_top" class="item">MWR리그</a>
+<a href="/news/articleList.html?sc_sub_section_code=S2N33&view_type=sm" target="_top" class="item">MMS리그</a>
+		</div>
+	</nav>
+	
+	<!-- list&view 2차 섹션 : 뉴스/일정/순위/영상 //-->
+		<!--// list&view 2차 섹션 : 뉴스/일정/순위/영상 -->
+
+	<nav id="user-nav">
+		<header class="header">
+			<a href="http://www.motm.co.kr" class="item">
+				<img src="https://cdn.motm.co.kr/image/logo/mobilelogo_20230920093207.png" alt="맨오브더매치" />
+			</a>
+			<article class="item">
+				<a href="https://www.motm.co.kr/member/login.html" target="_top" class="btns"><i class="icon-user-o"><span class="show-for-sr">로그인</span></i></a>				<button type="button" class="btns nav-close"><i class="icon-close"><span class="show-for-sr">메뉴닫기</span></i></button>
+			</article>
+		</header>
+
+		<!-- nav container //-->
+				<section class="container">
+			<!-- search //-->
+			<fieldset class="search-form">
+				<form name="head-search" method="get" class="inner" action="/news/articleList.html">
+					<input type="hidden" name="sc_area" value="A">
+					<input type="hidden" name="view_type" value="sm">
+					<label class="show-for-sr" for="sc_word">검색</label>
+					<input type="search" name="sc_word" id="sc_word" placeholder="검색어를 입력하세요">
+					<button type="button" onclick="if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');this.form.sc_word.focus();return false;}"><i class="icon-search-thin"></i><span class="show-for-sr">검색</span></button>
+				</form>
+			</fieldset>
+			<!--// search -->
+
+			<ul class="vertical menu" data-multi-open="false" data-accordion-menu>
+				<!-- <li class="for-all"><a href="/news/articleList.html">전체기사</a></li> -->
+					<li>
+		<a href="/news/articleList.html?sc_section_code=S1N1&view_type=sm" target="_top">프리미어리그</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N2&view_type=sm" target="_top">라리가</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N3&view_type=sm" target="_top">세리에A</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N4&view_type=sm" target="_top">분데스리가</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N5&view_type=sm" target="_top">기타리그</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N6&view_type=sm" target="_top">MWR리그</a>
+	</li>
+	<li>
+		<a href="/news/articleList.html?sc_section_code=S1N7&view_type=sm" target="_top">MMS리그</a>
+	</li>
+			</ul>
+
+			<div class="rank-tile">
+				<a href="/news/articleList.html?view_type=sm"><i class="icon-clock-o"></i><span class="text">실시간 뉴스</span></a>
+				<a href="/news/articleList.html?sc_day=7&sc_order_by=C&view_type=sm"><i class="icon-chart-bar"></i><span class="text">많이 본 뉴스</span></a>
+				<a href="/news/articleList.html?sc_day=7&sc_order_by=C&view_type=sm"><i class="icon-crown"></i><span class="text">주요 뉴스</span></a>
+
+				<a href="/news/movieList.html"><i class="icon-youtube-play"></i><span class="text">동영상 뉴스</span></a>
+				<a href="/news/articleList.html?sc_is_image=Y&view_type=sm"><i class="icon-image-o"></i><span class="text">포토 뉴스</span></a>
+				<a href="/news/articleList.html?sc_article_type=P&view_type=sm"><i class="icon-paper"></i><span class="text">카드 뉴스</span></a>
+			</div>
+		</section>
+		<!--// nav container -->
+
+		<footer class="footer">
+			<a href="http://www.motm.co.kr/" onclick="setCookie('view_pc', 'y', 1);" class="go-to-desktop">PC버전 보기</a>
+
+			<nav class="navs">
+				<a href="/com/com-1.html">매체소개</a>
+				<a href="https://www.motm.co.kr/com/jb.html">기사제보</a>
+			</nav>
+
+			<address class="address">
+				<em class="item zips"> -</em>
+				<a href="tel:-" class="item"><i class="icon-call"><span class="show-for-sr">전화</span></i>&nbsp;-</a>
+				<em class="item"><i class="icon-fax"><span class="show-for-sr">팩스</span></i>&nbsp;-</em>
+			</address>
+		</footer>
+	</nav>
+	<div class="nav-overlap"></div>
+</header>
+<!--// header -->
+
+		
+		
+		<!-- container //-->
+		<section id="user-container" class="pady-0">
+            <!-- layer popup position  -->
+            <div id="layer-popups"></div>
+<style type="text/css">
+/* edit skin css START */
+#m-idx-custom {max-width:728px;margin:0 auto;background-color:#fff}
+#user-wrap .row #m-idx-custom {margin-top:-.625rem}
+@media screen and (max-width: 39.9375em) {
+}
+
+/* box skin */
+.box-skin .header {margin-bottom:.625rem}
+.box-skin .header > a[class*="btm-"] {position:relative;background:none}
+.box-skin .header > a[class*="btm-"]::before {content:'\e93e';position:absolute;z-index:1;top:50%;right:0;font-family:fontello;font-size:1.25rem;color:#333;transform:translateY(-50%)}
+.box-skin.point .header > a[class*="btm-"]::before {color:#013f92}
+
+.box-skin.line-header .header {padding-top:.938rem;border-top:4px solid #333}
+.box-skin.line-header.point .header {border-top-color:#013f92}
+/* edit skin css END */
+</style>
+
+
+<!-- 메인화면 //-->
+<div id="m-idx-custom" class="index-wrap">
+	
+	<!-- 내용 //-->
+	<div class="clearfix">
+<article class="box-skin">
+<header class="header"></header>
+<section class="content"><style type="text/css">
+#skin-28 > .item {position:relative;text-align:center}
+#skin-28 > .item:not(:first-child) {margin-top:1.5rem;padding-top:1.5rem;border-top:3px double #e2e2e2}
+#skin-28 .frame {border-radius:15px} 
+#skin-28 .content {display:block;width:auto} 
+#skin-28 .title {display:inline-block;overflow:hidden;position:relative;z-index:20;height:32px;margin:-1rem auto .625rem;padding:0 1.25rem;line-height:32px;color:#fff;background-color:#e73f72}
+#skin-28 .auto-titles {margin:0 auto;letter-spacing:-.05em;text-align:center}
+</style>
+<div id="skin-28" class="auto-article">
+<div class="item">
+		<a href="/news/articleView.html?idxno=1492" target="_top">
+			<span class="frame"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1492_2064_3335_1702251215_500.jpg)"></em>
+			</span>
+			<em class="title size-15 user-bg">TODAY'S HOT</em>
+			<H2 class="auto-titles size-26 weight-700 line-4x2 auto-fontA onload"><strong>S팀, 측면 수비 강찬혁-김강현 최종전 결장</strong></H2>
+		</a>
+		</div>
+</div>
+</section>
+</article><div class="box-margins " style="margin-bottom:20px;"></div><article class="box-skin">
+<header class="header"></header>
+<section class="content"><style type="text/css">
+#skin-29 {overflow:hidden}
+#skin-29 .wrapper {display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-.3125rem;margin-right:-.3125rem}
+#skin-29 .item {-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;padding-left:.3125rem;padding-right:.3125rem}
+#skin-29 .wrapper > :not(:nth-child(-n + 2)) {margin-top:1.875rem}
+#skin-29 .frame,
+#skin-29 .frame.line::before {border-radius:.625rem}
+#skin-29 .auto-titles {font-weight:500;letter-spacing:-.05em}
+</style>
+<div id="skin-29" class="auto-article">
+<div class="wrapper"><div class="item">
+		<a href="/news/articleView.html?idxno=1494" target="_top">
+
+			<span class="frame marbtm-10 line"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1494_2068_746_1702253266_300.jpg)"></em>
+			</span>
+			<H2 class="auto-titles size-16 line-4x2 auto-fontA">우승 앞둔 D팀, 불안감 고조... 지난 시즌 데자뷰?</H2>
+			<em class="auto-section martop-10 size-14 weight-700 user-point">MMS리그</em>
+		</a>
+        </div>
+<div class="item">
+		<a href="/news/articleView.html?idxno=1493" target="_top">
+
+			<span class="frame marbtm-10 line"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1493_2066_511_1702252261_300.jpg)"></em>
+			</span>
+			<H2 class="auto-titles size-16 line-4x2 auto-fontA">'최악의 상황' D팀, 안태령 독감 증세로 최종전 결장</H2>
+			<em class="auto-section martop-10 size-14 weight-700 user-point">MMS리그</em>
+		</a>
+        </div>
+</div>
+</div>
+</section>
+</article><div class="box-margins " style="margin-bottom:20px;"></div><article class="box-skin">
+<header class="header"></header>
+<section class="content"><style type="text/css">
+#skin-30 {overflow:hidden}
+#skin-30 .wrapper {display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-.3125rem;margin-right:-.3125rem}
+#skin-30 .item {-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;padding-left:.3125rem;padding-right:.3125rem}
+#skin-30 .wrapper > :not(:nth-child(-n + 2)) {margin-top:1.875rem}
+#skin-30 .frame,
+#skin-30 .frame.line::before {border-radius:.625rem}
+#skin-30 .auto-titles {font-weight:500;letter-spacing:-.05em}
+</style>
+<div id="skin-30" class="auto-article">
+<div class="wrapper"><div class="item">
+		<a href="/news/articleView.html?idxno=1495" target="_top">
+
+			<span class="frame marbtm-10 line"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1495_2069_1659_1702253819_300.jpg)"></em>
+			</span>
+			<H2 class="auto-titles size-16 line-4x2 auto-fontA">'비상사태' 리그 1위 S팀, 주장 김우석 최종전에 못 나온다</H2>
+			<em class="auto-section martop-10 size-14 weight-700 user-point">MWR리그</em>
+		</a>
+        </div>
+<div class="item">
+		<a href="/news/articleView.html?idxno=1496" target="_top">
+
+			<span class="frame marbtm-10 line"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1496_2072_3633_1702254993_300.jpg)"></em>
+			</span>
+			<H2 class="auto-titles size-16 line-4x2 auto-fontA">정승원 최종전 경기 나선다...A팀, 출전 선수 양두영 포함 5명</H2>
+			<em class="auto-section martop-10 size-14 weight-700 user-point">MMS리그</em>
+		</a>
+        </div>
+</div>
+</div>
+</section>
+</article><div class="box-margins " style="margin-bottom:30px;"></div><article class="box-skin line-header point ">
+<header class="header"><a href="/news/articleList.html?sc_section_code=S1N1&view_type=sm" target="_top" class="btm-Icon"><span class="user-point">프리미어리그</span></a></header>
+<section class="content"><style type="text/css">
+#skin-31 > .item:not(:first-child) {margin-top:1.25rem}
+#skin-31 .auto-flex {display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-align-items:center;align-items:center}
+#skin-31 .content {-ms-flex-preffered-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%;min-width:0}
+#skin-31 .frame {-ms-flex:0 0 120px;flex:0 0 120px;width:120px;margin-left:1.25rem;border-radius:10px}
+#skin-31 .frame.line::before {border-radius:10px}
+#skin-31 .auto-titles {font-weight:500;letter-spacing:-.05em}
+</style>
+<div id="skin-31" class="auto-article"><div class="item">
+			<a href="/news/articleView.html?idxno=1481" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">멈추지 않는 골 감각... 울버햄튼 황희찬, 결승골 터뜨리며 팀 승리 이끌어 '시즌 8호'</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">기타</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1481_2049_5959_1701935999_140.jpg)"></em>
+			</div></a>
+		</div>
+<div class="item">
+			<a href="/news/articleView.html?idxno=1458" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">맨시티 홀란드, 개인 SNS에 심판 판정에 불만감 표출</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">맨시티</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1458_2026_1251_1701742371_140.jpg)"></em>
+			</div></a>
+		</div>
+<div class="item">
+			<a href="/news/articleView.html?idxno=1454" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">토트넘 에이스 손흥민, 1득점 1도움 1자책골 기록… 팀은 3-3 극적인 무승부 거둬</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">토트넘</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1454_2022_492_1701676142_140.jpg)"></em>
+			</div></a>
+		</div>
+</div>
+</section>
+</article><div class="box-margins " style="margin-bottom:30px;"></div><article class="box-skin line-header point ">
+<header class="header"><a href="/news/articleList.html?sc_section_code=S1N3&view_type=sm" target="_top" class="btm-Icon"><span class="user-point">세리에A</span></a></header>
+<section class="content"><style type="text/css">
+#skin-32 > .item:not(:first-child) {margin-top:1.25rem}
+#skin-32 .auto-flex {display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-align-items:center;align-items:center}
+#skin-32 .content {-ms-flex-preffered-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%;min-width:0}
+#skin-32 .frame {-ms-flex:0 0 120px;flex:0 0 120px;width:120px;margin-left:1.25rem;border-radius:10px}
+#skin-32 .frame.line::before {border-radius:10px}
+#skin-32 .auto-titles {font-weight:500;letter-spacing:-.05em}
+</style>
+<div id="skin-32" class="auto-article"><div class="item">
+			<a href="/news/articleView.html?idxno=1341" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">첼시-맨유, 인테르 수비수 덤프리스에 관심</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">인테르</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1341_1921_5013_1700538613_140.jpg)"></em>
+			</div></a>
+		</div>
+<div class="item">
+			<a href="/news/articleView.html?idxno=491" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">포지션 변경? 밀란의 지루, 골키퍼로 베스트11 선정 쾌거</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">AC밀란</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/491_1922_5056_1700538656_140.jpg)"></em>
+			</div></a>
+		</div>
+</div>
+</section>
+</article><div class="box-margins " style="margin-bottom:30px;"></div><style type="text/css">
+#motm-sns {margin-left:-1.25rem;margin-right:-1.25rem;padding:1.5rem 0;background-color:#efefef}
+
+#sns-list {display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-align-items:center;align-items:center;-ms-flex-pack:center;justify-content:center}
+#sns-list .sns {display:flex;flex-wrap:wrap;align-items:center;justify-content:center;-ms-flex:0 0 50px;flex:0 0 50px;width:50px;height:50px;font-size:1.5rem;color:#fff;line-height:1;border-radius:50%;background-color:#333}
+#sns-list .sns:not(:first-child) {margin-left:.625rem}
+#sns-list .sns.facebook {background-color:#405DA1}
+#sns-list .sns.twitter {background-color:#249EF0}
+#sns-list .sns.instagram {background:linear-gradient(45deg, #ffc56b 0%, #f35b4b 25%, #cc3970 45%, #9b2faa 70%, #501ad5 85%, #1a10ef 100%)}
+#sns-list .sns.youtube {background-color:#FF0808}
+#sns-list .sns.blog {background-color:#0AC842}
+</style>
+
+<article id="motm-sns" class="box-skin">
+	<header class="header text-center">
+		<strong><span class="user-point">맨오브더매치 SNS</span></strong>
+	</header>
+	<section class="content">
+		<div id="sns-list">
+			<a onclick="alert('준비중입니다.')" rel="menu" class="sns facebook"><i class="icon-facebook"></i></a>
+			<a onclick="alert('준비중입니다.')" rel="menu" class="sns twitter"><i class="icon-twitter"></i></a>
+			<a onclick="alert('준비중입니다.')" rel="menu" class="sns instagram"><i class="icon-instagram"></i></a>
+			<a onclick="alert('준비중입니다.')" rel="menu" class="sns youtube"><i class="icon-youtube-play"></i></a>
+			<a onclick="alert('준비중입니다.')" rel="menu" class="sns blog"><i class="icon-blog"></i></a>
+		</div>
+	</section>
+</article>
+<div class="box-margin" style="margin-bottom:30px;"></div><article class="box-skin line-header point ">
+<header class="header"><a href="/news/articleList.html?sc_section_code=S1N2&view_type=sm" target="_top" class="btm-Icon"><span class="user-point">라리가</span></a></header>
+<section class="content"><style type="text/css">
+#skin-33 > .item:not(:first-child) {margin-top:1.25rem}
+#skin-33 .auto-flex {display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-align-items:center;align-items:center}
+#skin-33 .content {-ms-flex-preffered-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%;min-width:0}
+#skin-33 .frame {-ms-flex:0 0 120px;flex:0 0 120px;width:120px;margin-left:1.25rem;border-radius:10px}
+#skin-33 .frame.line::before {border-radius:10px}
+#skin-33 .auto-titles {font-weight:500;letter-spacing:-.05em}
+</style>
+<div id="skin-33" class="auto-article"><div class="item">
+			<a href="/news/articleView.html?idxno=1461" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">레알 마드리드, 수비수 카르바할 잃다... 종아리 부상으로 한달간 결장</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">레알마드리드</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1461_2032_3136_1701761496_140.jpg)"></em>
+			</div></a>
+		</div>
+<div class="item">
+			<a href="/news/articleView.html?idxno=1345" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">모드리치마저 사우디행?! 알 아흘리-알 이티하드, 겨울 이적시장 기다린다</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">레알마드리드</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1345_1916_4724_1700538444_140.jpg)"></em>
+			</div></a>
+		</div>
+<div class="item">
+			<a href="/news/articleView.html?idxno=1344" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">'세리에A 복귀 NO' 모라타, 아틀레티코와 4년 재계약 합의</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">AT마드리드</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1344_1917_4755_1700538475_140.jpg)"></em>
+			</div></a>
+		</div>
+</div>
+</section>
+</article><div class="box-margins " style="margin-bottom:30px;"></div><article class="box-skin line-header point ">
+<header class="header"><a href="/news/articleList.html?sc_section_code=S1N5&view_type=sm" target="_top" class="btm-Icon"><span class="user-point">기타리그</span></a></header>
+<section class="content"><style type="text/css">
+#skin-34 > .item:not(:first-child) {margin-top:1.25rem}
+#skin-34 .auto-flex {display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-align-items:center;align-items:center}
+#skin-34 .content {-ms-flex-preffered-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%;min-width:0}
+#skin-34 .frame {-ms-flex:0 0 120px;flex:0 0 120px;width:120px;margin-left:1.25rem;border-radius:10px}
+#skin-34 .frame.line::before {border-radius:10px}
+#skin-34 .auto-titles {font-weight:500;letter-spacing:-.05em}
+</style>
+<div id="skin-34" class="auto-article"><div class="item">
+			<a href="/news/articleView.html?idxno=1477" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">오현규 '멀티골' 폭발...셀틱, 하이버니언에 4대 1 대승</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">셀틱</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1477_2048_5434_1701935674_140.jpg)"></em>
+			</div></a>
+		</div>
+<div class="item">
+			<a href="/news/articleView.html?idxno=1460" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">조규성, 유럽 진출 후 첫 멀티골...팀 대승 이끌며 '득점 3위' 올라</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">미트윌란</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1460_2031_210_1701759730_140.jpg)"></em>
+			</div></a>
+		</div>
+<div class="item">
+			<a href="/news/articleView.html?idxno=1438" target="_top" class="auto-flex">
+				<div class="content">
+					<H2 class="auto-titles size-18 line-4x2 auto-fontA">PSG 이강인 선발 출전 '82분' 소화...팀은 1-1 무승부 기록</H2>
+					<span class="auto-section martop-10 size-14 weight-700 user-point">파리생제르맹</span>
+				</div><div class="frame line">
+				<em class="auto-images ratio-32" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1438_2007_2723_1701242843_140.jpg)"></em>
+			</div></a>
+		</div>
+</div>
+</section>
+</article><div class="box-margins " style="margin-bottom:30px;"></div><article class="box-skin line-header point ">
+<header class="header"><strong><span class="user-point">MOTM 최신영상</span></strong></header>
+<section class="content"><style type="text/css">
+#skin-35 {overflow:hidden}
+#skin-35 .wrapper {display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-.3125rem;margin-right:-.3125rem}
+#skin-35 .item {-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;padding-left:.3125rem;padding-right:.3125rem}
+#skin-35 .wrapper > :not(:nth-child(-n + 2)) {margin-top:1.875rem}
+#skin-35 .frame,
+#skin-35 .frame.line::before {border-radius:.625rem}
+#skin-35 .auto-titles {font-weight:500;letter-spacing:-.05em}
+</style>
+<div id="skin-35" class="auto-article">
+<div class="wrapper"><div class="item">
+		<a href="/news/articleView.html?idxno=1122" target="_top">
+
+			<span class="frame marbtm-10 line"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1122_1405_4528_1698021929_300.jpg)"></em>
+			</span>
+			<H2 class="auto-titles size-16 line-4x2 auto-fontA">[MMS리그] 우승 후보 0순위...D팀의 우승 시나리오 이번엔 가능할까???</H2>
+			<em class="auto-section martop-10 size-14 weight-700 user-point">MMS리그</em>
+		</a>
+        </div>
+<div class="item">
+		<a href="/news/articleView.html?idxno=1121" target="_top">
+
+			<span class="frame marbtm-10 line"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1121_1404_4455_1698021895_300.jpg)"></em>
+			</span>
+			<H2 class="auto-titles size-16 line-4x2 auto-fontA">[MMS리그] C팀은 왕좌의 자리를 지켜낼 수 있을까?! 전력 분석 PREVIEW</H2>
+			<em class="auto-section martop-10 size-14 weight-700 user-point">MMS리그</em>
+		</a>
+        </div>
+<div class="item">
+		<a href="/news/articleView.html?idxno=1120" target="_top">
+
+			<span class="frame marbtm-10 line"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1120_1403_4427_1698021867_300.jpg)"></em>
+			</span>
+			<H2 class="auto-titles size-16 line-4x2 auto-fontA">[MMS리그] 꼴찌 그리고 2위, 다음은 우승?! B팀 전력 분석 및 예상 순위 체크</H2>
+			<em class="auto-section martop-10 size-14 weight-700 user-point">MMS리그</em>
+		</a>
+        </div>
+<div class="item">
+		<a href="/news/articleView.html?idxno=1119" target="_top">
+
+			<span class="frame marbtm-10 line"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1119_1402_4349_1698021829_300.jpg)"></em>
+			</span>
+			<H2 class="auto-titles size-16 line-4x2 auto-fontA">[MMS리그] 꼴찌 탈출 가능할까? A팀 전력 분석 및 예상 순위 체크!</H2>
+			<em class="auto-section martop-10 size-14 weight-700 user-point">MMS리그</em>
+		</a>
+        </div>
+<div class="item">
+		<a href="/news/articleView.html?idxno=1118" target="_top">
+
+			<span class="frame marbtm-10 line"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1118_1401_4315_1698021796_300.jpg)"></em>
+			</span>
+			<H2 class="auto-titles size-16 line-4x2 auto-fontA">[MMS리그] 발등에 불 떨어진 A-B-C팀, FA-C그룹에서도 움직일까?!</H2>
+			<em class="auto-section martop-10 size-14 weight-700 user-point">MMS리그</em>
+		</a>
+        </div>
+<div class="item">
+		<a href="/news/articleView.html?idxno=1117" target="_top">
+
+			<span class="frame marbtm-10 line"><em class="auto-images" style="background-image:url(https://cdn.motm.co.kr/news/thumbnail/custom/20231211/1117_1399_4216_1698021736_300.jpg)"></em>
+			</span>
+			<H2 class="auto-titles size-16 line-4x2 auto-fontA">[MMS리그] 그냥 넘어갈수 없는 FA-C그룹... 과연 계약에 성공하는 사람은 누구?!</H2>
+			<em class="auto-section martop-10 size-14 weight-700 user-point">MMS리그</em>
+		</a>
+        </div>
+</div>
+</div>
+</section>
+</article><div class="box-margins " style="margin-bottom:30px;"></div>
+	</div>
+	<!--// 내용 -->
+
+</div>
+<!--// 메인화면 -->
+		</section>
+		<!--// container -->
+
+		
+<!-- footer //-->
+<footer id="user-footer">
+	<nav class="key-service">
+				<a href="/news/articleList.html?sc_section_code=S1N1&view_type=sm" target="_top">프리미어리그</a>
+		<a href="/news/articleList.html?sc_section_code=S1N2&view_type=sm" target="_top">라리가</a>
+		<a href="/news/articleList.html?sc_section_code=S1N3&view_type=sm" target="_top">세리에A</a>
+		<a href="/news/articleList.html?sc_section_code=S1N4&view_type=sm" target="_top">분데스리가</a>
+		<a href="/news/articleList.html?sc_section_code=S1N5&view_type=sm" target="_top">기타리그</a>
+		<a href="/news/articleList.html?sc_section_code=S1N6&view_type=sm" target="_top">MWR리그</a>
+		<a href="/news/articleList.html?sc_section_code=S1N7&view_type=sm" target="_top">MMS리그</a>
+	</nav>
+
+	<address class="address">
+		 -<br>
+		대표전화 : - | 팩스 : -<br>
+		C<a href="https://www.motm.co.kr/admin/adminLoginForm.html" tabindex="-1">o</a>pyright &copy; 2023 맨오브더매치. All rights reserved.
+	</address>
+
+	<article class="quick-menu">
+		<a href="/com/com-1.html" target="_top">매체소개</a>
+		<a href="/com/privacy.html" target="_top">개인정보처리방침</a>
+		<a href="http://www.motm.co.kr/" onclick="setCookie('view_pc', 'y', 1);">PC버전</a>
+		<!-- 석준 테스트 -->
+		<!-- <button id="install" hidden style="width: 20px; height: 20px;">Install</button> -->
+		<a id="install" style="visibility: hidden;">앱 설치하기</a>
+		<!-- 석준 테스트 -->
+		<span class="ndsoft">
+			<a href="http://www.ndsoft.co.kr" target="_blank" class="ci"><img src="https://cdn.motm.co.kr/image/ndsoft.svg" alt="ND소프트" /></a>
+		</span>
+	</article>
+</footer>
+<!--// footer -->
+
+
+	</div>
+</div>
+<!--// wrap -->
+
+<!-- back to the top //-->
+<button type="button" id="back-to-top" class="back-to-top for-mobile" title="위로"><i class="icon-arrow-top"><span class="show-for-sr">위로</span></i></button>
+<!--// back to the top -->
+
+<script type="text/javascript">
+<!--
+// back to the top		
+$(document).scroll(function(){
+	var sDocumentHeight = $(document).height() - $(window).height();
+	if($(document).scrollTop() > 0){	
+		$('#back-to-top').fadeIn();
+	}else{
+		$('#back-to-top').fadeOut();
+	}
+});
+
+$('#back-to-top').click(function(){
+	$('html, body').animate( {scrollTop:0}, 100);
+});
+//-->
+</script>
+
+<script>
+// Popup Json
+var ___popup = [];
+bannerpop.popup();
+</script>
+
+
+<!-- 구글 애드센스 S -->
+<script src="https://cdn.motm.co.kr/adManager/js/lab.js"></script>
+<script>
+jQuery(function($) {
+	setTimeout(function() {
+		$LAB
+		.script("//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js")
+		.wait(function () {
+			var adn = jQuery('.adsbygoogle').length;
+			if (adn > 0) {
+				for (var i = 0; i < adn; i++) {
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				}
+			}
+		});
+	}, 1000);
+});
+</script>
+<!-- 구글 애드센스 E -->
+<script>
+$(document).ready(function(){
+	// 닫기 버튼 자동 노출
+	$('.ad-template.ad-close .ad-view').each(function(){
+		$(this).append('<div class="ad-close-btn"><i class="icon-close"></i></div>');
+	})
+
+	// 닫기 버튼 클릭 시 이벤트
+	$('body').on('click', '.ad-close-btn', function(){
+		$(this).closest('.ad-view').slideUp();
+	})
+
+	// isND
+	var ____is_nd = getCookie('____is_nd');
+	if(____is_nd) {
+				// ND IP만 광고 ID 보이기
+		$('.ad-template').each(function(){
+			$(this).append('<div class="ad-code-id">'+$(this).attr('id')+'</div>');
+		})
+		
+				// 광고 ID 자동 숨김 설정 시
+		$('.ad-code-id').hide();
+
+		$('.ad-template').mouseenter(function(){
+			$(this).find('.ad-code-id').show();
+		}).mouseleave(function(){
+			$(this).find('.ad-code-id').hide();
+		})
+		
+
+			}
+})
+
+
+
+/* ****************************************** */
+/* 날개배너 스크립트  */
+/* ****************************************** */
+$('#wingBanner .wing-banner-left .wing-banner').each(function(){
+	if( $(this).data('scroll') == 'y' ) $(this).addClass('scroll-on');
+});
+
+$(window).scroll(function() {
+	if( $('#wingBanner .wing-banner').length > 0 ){											// 날개배너가 있으면 작동
+
+		var scrollingHeight_L = nonScrollingHeight_L = scrollingHeight_R = nonScrollingHeight_R = 0;
+
+		$('#wingBanner .wing-banner').each(function(idx){
+			var $_this		= $(this),														// 날개배너
+				scroll		= $_this.data('scroll'),										// 날개배너 스크롤 여부
+				topMargin	= $_this.data('top-margin'),									// 날개배너 상단여백
+				downMargin	= $_this.data('down-margin'),									// 날개배너 하단여백
+				duration	= $_this.data('duration'),										// 날개배너 스크롤 속도
+				direction	= $_this.data('direction'),										// 날개배너 위치
+				// bannerTop	= $_this.offset().top,											// 날개배너 상단 위치 (가변)
+				bannderHeight = $_this.outerHeight();										// 날개배너 높이 (고정)
+
+			var fixWingBannertop	= $('#wingBanner').offset().top;						// 날개배너 상단 위치 (고정)
+
+			var articleTitleHeight	= $('#sticky-header.scroll').height();			// 날개배너 스크롤 시 상단 타이틀 높이 (기사 본문 시)
+			if(!articleTitleHeight) articleTitleHeight = 0;
+
+			var $_userFooter		= $('#user-footer'),									// 사이트 Footer
+				userFooterHeight	= $_userFooter.outerHeight();							// 사이트 Footer 높이 (고정)
+
+			var winScrollTop		= $(window).scrollTop(),								// 윈도우 스크롤 위치 (가변)
+				winHeight			= $(window).height(),									// 윈도우 높이
+				docHeight			= $(document).height();									// 페이지 높이
+
+			switch (direction) {															// 날개 배너 위치 별
+				case 'left':
+					if(scroll == 'y') scrollingHeight_L += bannderHeight;					// 순서대로 노출되는 날개배너 중 스크롤 하는 배너의 높이값 (좌)
+					else nonScrollingHeight_L += bannderHeight;								// 순서대로 노출되는 날개배너 중 스크롤 하지 않는 배너의 높이값 (좌)
+					break;
+
+				case 'right':
+					if(scroll == 'y') scrollingHeight_R += bannderHeight;					// 순서대로 노출되는 날개배너 중 스크롤 하는 배너의 높이값 (우)
+					else nonScrollingHeight_R += bannderHeight;								// 순서대로 노출되는 날개배너 중 스크롤 하지 않는 배너의 높이값 (우)
+					break;
+			}
+
+			if(scroll == 'y') {																// 스크롤 배너만 움직임 처리
+				var bannerAllHeight = siteAllHeight = 0;
+
+				// 좌우측 각각 배너 스크롤 처리를 위해 나눠서 처리
+				if(direction == 'left'){																			// 좌측 날개
+					var wingBnTop_L = winScrollTop - fixWingBannertop + topMargin - nonScrollingHeight_L;			// 날개배너 스크롤 위치 (가변)
+
+					if( articleTitleHeight ) wingBnTop_L += articleTitleHeight;										// 기사본문 시 상단 스크롤 타이틀이 나타나면 스크롤 타이틀 만큼 날개배너 위치 조정
+
+					if((fixWingBannertop + nonScrollingHeight_L) < winScrollTop) {
+
+						bannerAllHeight = articleTitleHeight + scrollingHeight_L + 1;								// 상단 타이틀 + 스크롤배너의 총 높이
+						siteAllHeight = winHeight - userFooterHeight + downMargin;									// 윈도우 높이 + 사이트 Footer 높이
+
+						if( (winScrollTop >= ((docHeight - userFooterHeight) - winHeight)) && (bannerAllHeight >= siteAllHeight) ) {					// 사이트 Footer 넘어가는 경우 처리
+							wingBnTop_L -= ((userFooterHeight + downMargin) - (winHeight - (scrollingHeight_L + topMargin + articleTitleHeight)));
+							$('#wingBanner .wing-banner-left .wing-banner.scroll-on').animate({top:wingBnTop_L+"px" },{queue: false, duration: duration});		// 마지막 배너 움직임 처리
+						}
+					} else {
+						wingBnTop_L = 0;																			// 최상단 처리
+					}
+					$_this.animate({top:wingBnTop_L+"px" },{queue: false, duration: duration});
+
+				} else {																							// 우측 날개
+
+					var wingBnTop_R = winScrollTop - fixWingBannertop + topMargin - nonScrollingHeight_R;			// 날개배너 스크롤 위치 (가변)
+
+					if( articleTitleHeight ) wingBnTop_R += articleTitleHeight;										// 기사본문 시 상단 스크롤 타이틀이 나타나면 스크롤 타이틀 만큼 날개배너 위치 조정
+
+					if((fixWingBannertop + nonScrollingHeight_R) < winScrollTop) {
+
+						bannerAllHeight = articleTitleHeight + scrollingHeight_R + 1;								// 상단 타이틀 + 스크롤배너의 총 높이
+						siteAllHeight = winHeight - userFooterHeight + downMargin;									// 윈도우 높이 + 사이트 Footer 높이
+
+						if( (winScrollTop >= ((docHeight - userFooterHeight) - winHeight)) && (bannerAllHeight >= siteAllHeight) ) {					// 사이트 Footer 넘어가는 경우 처리
+							wingBnTop_R -= ((userFooterHeight + downMargin) - (winHeight - (scrollingHeight_R + topMargin + articleTitleHeight)));
+							$('#wingBanner .wing-banner-right .wing-banner.scroll-on').animate({top:wingBnTop_R+"px" },{queue: false, duration: duration});		// 마지막 배너 움직임 처리
+						}
+					} else {
+						wingBnTop_R = 0;																			// 최상단 처리
+					}
+					$_this.animate({top:wingBnTop_R+"px" },{queue: false, duration: duration});
+				}
+			}
+		});
+	}
+
+});
+</script>
+<!-- 석준 테스트 -->
+<script>
+	let installPrompt = null;
+	const installButton = document.querySelector("#install");
+
+	window.addEventListener("beforeinstallprompt", (event) => {
+	event.preventDefault();
+	installPrompt = event;
+	installButton.style.visibility = 'visible';
+	});
+	installButton.addEventListener("click", async () => {
+		if (!installPrompt) {
+			return;
+		}
+		const result = await installPrompt.prompt();
+		console.log(`Install prompt was: ${result.outcome}`);
+		installPrompt = null;
+		installButton.setAttribute("hidden", "");
+		});
+</script>
+<!-- 석준 테스트 -->
+
+</body>
+</html>
+
