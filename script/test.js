@@ -1,6 +1,7 @@
 var btnLocation = ['LT', 'LB', 'RT', 'RB']
 var btnTop
 var btnLeft
+
 if(btnRandom == true){
     var selected = btnLocation[Math.floor(Math.random() * btnLocation.length)] // 랜덤하게 버튼 위치 설정
 }else if(!btnposition){
