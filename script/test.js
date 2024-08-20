@@ -25,8 +25,8 @@ if (selected == 'LT') { //Left top
 }
 
 document.write ('<div id="all_wrapper1" style="position:absolute; left:0px; top:0px; width:100%; height:0px; text-align:center; margin:0 auto; z-index:'+zIndex+';">\n');
-document.write ('<div id="second_wrapper1" style="position:relative; left:'+AdMarginLeft+'px; top:0px; width:0px; height:0px; text-align:left; margin:0 auto;">\n');
-document.write ('<div id="FloatLayer1" style="position:absolute; top:'+AdMarginTop+'px; width:'+AdWidth+'px; height:'+AdHeight+'px; display:block; z-index:300;">\n');
+document.write ('<div id="second_wrapper1" style="position:relative; left:0px; top:0px; width:0px; height:0px; text-align:left; margin:0 auto;">\n');
+document.write ('<div id="FloatLayer1" style="position:absolute; left:'+AdMarginLeft+'px; top:'+AdMarginTop+'px; width:'+AdWidth+'px; height:'+AdHeight+'px; display:block; z-index:300;">\n');
 
 document.write ('<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH="'+AdWidth+'" HEIGHT="'+AdHeight+'" SRC="'+AdUrl+'" allowTransparency="true"></IFRAME>');
 document.write ('<div id="close" style="position:absolute; top:'+btnTop+'px; left:'+btnLeft+'px; display:block;">\n');
