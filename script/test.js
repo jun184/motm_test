@@ -24,7 +24,7 @@ if (selected == 'LT') { //Left top
     btnLeft = AdWidth - (btnSizeWidth + btnMargin)
 }
 
-document.write ('<div id="all_wrapper1" style="position:absolute; left:0px; top:0px; width:0px; height:0px; text-align:center; margin:0 auto; z-index:98;">\n');
+document.write ('<div id="all_wrapper1" style="position:absolute; left:0px; top:0px; width:100%; height:0px; text-align:center; margin:0 auto; z-index:98;">\n');
 document.write ('<div id="second_wrapper1" style="position:relative; left:0px; top:0px; text-align:left; width:0px; height:0px; margin:0 auto;">\n');
 document.write ('<div id="FloatLayer1" STYLE="position:absolute; width:'+AdWidth+'px; height:'+AdHeight+'px; z-index:300; left:'+AdMarginLeft+'px; top:'+AdMarginTop+'px; display:block;">\n');
 
