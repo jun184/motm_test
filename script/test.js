@@ -1,13 +1,23 @@
+// iframe 체크해서 패스백인경우 0x0 으로 위치 이동값 추가 (24.08.22)
 var btnLocation = ['LT', 'LB', 'RT', 'RB']
 var btnTop
 var btnLeft
 
-if(btnRandom == true){
-    var selected = btnLocation[Math.floor(Math.random() * btnLocation.length)] // 랜덤하게 버튼 위치 설정
-}else if(!btnposition){
-    selected = 'RB'
+if(typeof btnRandom !== "undefined"){
+    if(btnRandom == true){
+        var selected = btnLocation[Math.floor(Math.random() * btnLocation.length)] // 랜덤하게 버튼 위치 설정
+    }else{
+        selected = btnposition
+    }
 }else{
-    selected = btnposition
+    selected = 'RB'
+}
+
+if(typeof iframePB !== "undefined"){
+    if(iframePB == true && self == top){ //현재 iframe창 일 경우
+        adMarginLeft = "0"; 
+        adMarginTop = "0";
+    }
 }
 
 if (selected == 'LT') { //Left top
@@ -30,12 +40,12 @@ document.write ('<div id="FloatLayer1" style="position:absolute; left:'+adMargin
 
 document.write ('<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH="'+adWidth+'" HEIGHT="'+adHeight+'" SRC="'+adUrl+'" allowTransparency="true"></IFRAME>');
 document.write ('<div id="close" style="position:absolute; top:'+btnTop+'px; left:'+btnLeft+'px; display:block;">\n');
-document.write ('<a style="display: block;" href="javascript:flot_close();"><img src="//advimg.khan.co.kr/RealMedia/ads/Creatives/khan/js_upload_NEW/close_1212_black_article.jpg" width="'+btnSizeWidth+'" height="'+btnSizeHeight+'" border="0" style="display: block;"></a></div>\n');
+document.write ('<a style="display: block;" href="javascript:floating_close();"><img src="//advimg.khan.co.kr/RealMedia/ads/Creatives/khan/js_upload_NEW/close_1212_black_article.jpg" width="'+btnSizeWidth+'" height="'+btnSizeHeight+'" border="0" style="display: block;"></a></div>\n');
 
 document.write ('</div>\n');
 document.write ('</div>\n');
 document.write ('</div>\n');
 
-function flot_close() {
+function floating_close() {
     	document.getElementById('all_wrapper1').style.display = 'none'; 
     }
